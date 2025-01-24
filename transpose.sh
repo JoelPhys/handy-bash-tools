@@ -1,4 +1,5 @@
-function transpose() {
+#!/bin/bash
+
 awk '
 { 
     for (i=1; i<=NF; i++)  {
@@ -15,4 +16,3 @@ END {
         print str
     }
 }' $1
-}

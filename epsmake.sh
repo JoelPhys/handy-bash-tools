@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function epsmake() {
 	a=$1
 	b=${a%.*}
@@ -6,3 +8,5 @@ function epsmake() {
 	dvipdf "${b}.dvi"
 	open "${b}.pdf"
 }
+
+epsmake $1

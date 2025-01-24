@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function avgcols() {
 
 if [ -z "$2" ]
@@ -24,3 +26,5 @@ END {
         printf \"%s%s\", a[i]/b[i], (i==NF?ORS:OFS)
 }" $1
 }
+
+avgcols $1

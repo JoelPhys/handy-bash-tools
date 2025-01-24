@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function avgfiles(){
 
 awk '
@@ -24,3 +26,5 @@ END {
     }
 }' $@
 }
+
+avgfiles $@

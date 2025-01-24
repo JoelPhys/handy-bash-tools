@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function fft() {
 
 	if [ $# -eq 0 ]
@@ -42,6 +44,8 @@ function fft() {
 		echo "# 3rd arg is y column"
 		echo "# 4th arg is start line"
 	else
-		python3 /home/sr4871/.commands/fft.py $1 $2 $3 $4
+		python3 ~/.commands/handy-bash-tools/fft.py $1 $2 $3 $4
 	fi
 }
+
+fft $1 $2 $3 $4
